@@ -1,5 +1,6 @@
 import math
-from arithmetic import additionOfTwoNumbers
+from arithmetic import addition_of_two_numbers
+
 
 def print_lyrics():
     print("I'm a lumberjack, and I'm okay.")
@@ -32,12 +33,12 @@ sqrt_of_16 = math.sqrt(16)
 #
 # print("The result of the computation", sqrt_of_16)
 
-the_result = additionOfTwoNumbers(4, 5)
+the_result = addition_of_two_numbers(4, 5)
 
 print(the_result)
 
-#print_lyrics()
-#print("Back to right after the call")
+# print_lyrics()
+# print("Back to right after the call")
 
 
 
