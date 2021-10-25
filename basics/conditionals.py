@@ -1,5 +1,3 @@
-x = 12
-
 # if x == 0:
 #     print("The value of x is", x)
 #     print(x, 'is positive')
@@ -9,8 +7,9 @@ x = 12
 # else:
 #     print(x, "is an odd number")
 
-
+x = 12
 y = 12
+
 if x < y:
     print('x is less than y')
     #...
