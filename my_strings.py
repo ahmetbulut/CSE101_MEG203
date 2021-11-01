@@ -6,23 +6,24 @@ fruit = 'banana'
 # print("the length of the string", len(fruit))
 # print("the last letter", fruit[len(fruit)-1])
 
-print("1. while loop example!")
+#print("1. while loop example!")
 index = 0
 while index < len(fruit):
-    print("condition is true because", index, "<",len(fruit))
-    print(fruit[index])
+    #print("condition is true because", index, "<",len(fruit))
+    #print(fruit[index])
     index = index + 1
 
-print("condition is false because", index, "is not <",len(fruit))
+#print("condition is false because", index, "is not <",len(fruit))
 
-print("2. for loop example!")
+#print("2. for loop example!")
 sequence = fruit
 for item in sequence:
-    print(item)
+    pass
+    #print(item)
 
 #index  012345678910
 name = "Ahmet Bulut"
-print(name[4:7])
+#print(name[4:7])
 
 # name = "İnci Bulut"
 # print(name)
@@ -46,4 +47,17 @@ def search(letter, sequence):
     if not found:
         print("I could not find", letter, "in", sequence)
 
-search("X", "Hello World!")
+#search("W", "Hello World!")
+
+input = 'Hello World!'
+letter = 'o'
+
+counter = 0
+
+for char in input:
+    if char == letter:
+        counter = counter + 1
+
+print("The frequency of", letter, "in", input, counter)
+
+print(input.upper().lower())
