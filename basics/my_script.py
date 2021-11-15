@@ -1,5 +1,5 @@
 import math
-from arithmetic import addition_of_two_numbers
+from basics.arithmetic import addition_of_two_numbers
 
 
 def print_lyrics():

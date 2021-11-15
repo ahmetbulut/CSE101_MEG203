@@ -1,5 +1,3 @@
-from my_lists import print_my_list
-
 def contents(d):
     return (d.keys(), d.values())
 
