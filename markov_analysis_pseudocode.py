@@ -28,10 +28,13 @@ for K in freqs:
 0.2/4.0 --> 0.05
 2 * 1.0 / 4 =
 
-"half"  [0.0,1.0] 0.0-0.249 #a
-                  0.250-0.499 #not
-                  0.50-1.0 #the
+for the word "half"
+take the real [0.0,1.0] interval, and divide it into ranges as:
+0.0-0.249 for the word "a"
+0.250-0.499 for the word "not"
+0.50-1.0 for the word "the"
 
-    random.random() --> 0.689 --> look_it_up_in_ranges --> emit the corresponding word
+then:
+generate a random number in [0.0,1.0] interval via random.random()
+say 0.689; look_it_up_in_ranges; finally emit the corresponding word
 
-#what does the value of totalcount represent?
