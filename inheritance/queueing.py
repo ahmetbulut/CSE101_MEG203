@@ -16,7 +16,7 @@ class Queue:
     # Remove and return an item from the queue.
     # The item that is returned is the first one that was added.
     def remove_item(self):
-        self.items.pop(0)
+        return self.items.pop(0)
 
     # Check whether the queue is empty.
     def is_empty(self):
