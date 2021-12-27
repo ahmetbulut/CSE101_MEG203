@@ -69,23 +69,3 @@ class Hand(Deck):
     def __init__(self, label=''):
         self.cards = []
         self.label = label
-
-# create a deck of 52 cards
-deck = Deck()
-deck.shuffle()
-
-# invite 2 players to your table; with their hands initially empty.
-Player1 = Hand()
-Player2 = Hand()
-
-# the game is on; you deal cards to your players.
-# the players will have non-empty hands.
-num = 4
-deck.deal_cards(Player1, num)
-deck.deal_cards(Player2, num)
-
-print("------")
-print(Player1)
-print("------")
-print(Player2)
-print("------")
