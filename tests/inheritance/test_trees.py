@@ -1,27 +1,25 @@
 import unittest
 
-from inheritance.trees import Tree, Node
+from inheritance.trees import Node
 
 class MyTestCase(unittest.TestCase):
     def test_construction(self):
         # ll and lr are leaf nodes
-        ll = Node("LL child", None, None)
-        lr = Node("LR child", None, None)
+        ll = Node("2", None, None)
+        lr = Node("4", None, None)
 
         # rl and rr are leaf nodes
-        rl = Node("RL child", None, None)
-        rr = Node("RR child", None, None)
+        rl = Node("5", None, None)
+        rr = Node("15", None, None)
 
         # l and r are internal nodes
-        l = Node("L child", ll, lr)
-        r = Node("R child", rl, rr)
+        l = Node("+", ll, lr)
+        r = Node("*", rl, rr)
 
         # root node, which has l & r as its children.
-        root = Node("Root", l, r)
+        root = Node("/", l, r)
 
-        tree = Tree(root)
-
-        print(tree)
+        print(root.print_tree())
 
 
 if __name__ == '__main__':
